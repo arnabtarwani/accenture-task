@@ -6,6 +6,16 @@ Date: 30-11-2022
 
 ## Accenture Task
 
+### How to run the app 
+
+1. Clone the repository
+2. Run `yarn install` to install all the dependencies
+3. Run `yarn dev` to start the app
+
+### How to run the production build that also runs on node
+1. Run `yarn build`
+2. Run `yarn start`
+
 ### Description
 
 @method rotationPointInRadians - rotates a point around a center point by a given angle in radians
