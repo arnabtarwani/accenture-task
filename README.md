@@ -35,3 +35,9 @@ Date: 30-11-2022
 - https://stackoverflow.com/a/15348177
 - https://levelup.gitconnected.com/javascript-problem-solvers-rotate-image-matrix-c02323c1c2fb
 - https://stackoverflow.com/a/65844039
+
+### Tech stack
+- React
+- Typescript
+- Vite (for bundling)
+- TailwindCSS (for styling)
