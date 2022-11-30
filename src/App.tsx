@@ -1,8 +1,9 @@
 import { useState } from "react"
+import { ImageDisplay } from "./components/imageDisplay"
 import { ImageInput } from "./components/Input"
 import Rotator from "./utils/rotator"
 
-function App() {
+export default function App() {
 
   const [uploadedImage, setUploadedImage] = useState<ImageData>(null as unknown as ImageData)
   const [rotatedImage, setRotatedImage] = useState<ImageData>(null as unknown as ImageData)
@@ -17,7 +18,6 @@ function App() {
       return;
     }
 
-    console.log('angle', angle)
     const radianVal = parseFloat((angle * Math.PI / 180).toFixed(2));
     const performanceVal = performance.now();
     const newRotator = new Rotator();
@@ -39,9 +39,11 @@ function App() {
       </div>
       <div>
         <ImageInput imageDataLoaded={handleImageUpload} handleRotation={handleRotation} />
+        <div className="flex justify-start items-start space-x-10">
+          <ImageDisplay title="Uploaded Image" imageData={uploadedImage} />
+          <ImageDisplay title="Rotation Processed Image" subTitle={rotationTime > 0 ? `Rotation Time: ${rotationTime.toFixed(2)} ms` : ''} imageData={rotatedImage} />
+        </div>
       </div>
     </div>
   )
 }
-
-export default App

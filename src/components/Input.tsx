@@ -29,7 +29,6 @@ export const ImageInput = (props: ImageInputProps) => {
                     if (ctx) {
                         ctx.drawImage(newImage, 0, 0);
                         const imageData = ctx.getImageData(0, 0, image.width, image.height);
-                        console.log(imageData)
                         imageDataLoaded(imageData);
                     }
                 }
