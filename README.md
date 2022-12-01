@@ -27,7 +27,7 @@ Date: 30-11-2022
 @method rotatePixelArray - Rotates the pixel array
 - This method takes the imageData properties - width, height, data and angle by which the image is to be rotated. It then reads the source image, maps the pixels to the new location 4 blocks at a time, and writes the result to the destination image. Simultaniously it calculates the new image dimensions based on the provided angle and instantiates a new array that holds the new image data. Finally, it returns the new image data and the new image dimensions
 
-@method rotateImage - Rotates the image
+@method rotate - Rotates the image
 - This method takes the image and angle by which the image is to be rotated. It then reads the source image and then rotates the image by the given angle and then returns the rotated image 
 - **@param {number} angle** - The angle by which the image is to be rotated has a datatype number as all numbers in Typescript are treated as number 
 
