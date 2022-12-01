@@ -86,7 +86,7 @@ export default class Rotator {
      * It then reads the source image
      * and then rotates the image by the given angle
      * and then returns the rotated image
-     * @param {HTMLImageElement} image - The image to be rotated
+     * @param {HTMLImageElement} imageData - The image to be rotated
      * @param {number} angle - The angle by which the image is to be rotated which is a 
      * number as all number types in Typescript are treated as number
     */
